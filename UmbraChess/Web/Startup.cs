@@ -1,3 +1,5 @@
+using UmbraChess.Data;
+
 namespace UmbraChess.Web
 {
     public class Startup
@@ -29,7 +31,9 @@ namespace UmbraChess.Web
         /// </remarks>
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddUmbraco(_env, _config)
+            services
+                .AddDbContext<DataContext>()
+                .AddUmbraco(_env, _config)
                 .AddBackOffice()
                 .AddWebsite()
                 .AddComposers()

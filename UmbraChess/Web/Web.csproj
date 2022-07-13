@@ -24,6 +24,12 @@
     <Folder Include="wwwroot" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Data\Data.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
+  </ItemGroup>
+
   <!-- Keep this as false if ModelsBuilder mode is InMemoryAuto -->
   <PropertyGroup>
     <RazorCompileOnBuild>false</RazorCompileOnBuild>
