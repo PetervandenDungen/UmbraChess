@@ -28,5 +28,7 @@
   <PropertyGroup>
     <RazorCompileOnBuild>false</RazorCompileOnBuild>
     <RazorCompileOnPublish>false</RazorCompileOnPublish>
+    <AssemblyName>UmbraChess.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>UmbraChess.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 </Project>

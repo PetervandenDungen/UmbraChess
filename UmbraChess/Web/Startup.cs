@@ -1,4 +1,4 @@
-namespace UmbraChess
+namespace UmbraChess.Web
 {
     public class Startup
     {
