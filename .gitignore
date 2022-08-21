@@ -476,3 +476,5 @@ appsettings-schema.json
 
 # Media files
 /wwwroot/media/
+UmbraChess/Web/secrets.json
+UmbraChess/Web/secrets.Development.json
