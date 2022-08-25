@@ -20,7 +20,7 @@ namespace UmbraChess.Web
             _env = webHostEnvironment ?? throw new ArgumentNullException(nameof(webHostEnvironment));
             _config = config ?? throw new ArgumentNullException(nameof(config));
 
-            //For some reason I have to pass the keyvault value to the config manually..
+            //For some reason I have to pass the CS keyvault value to the config manually..
             //Might be nice (TODO) to fix this in the native Umbraco way. (automatically)
             var cs = config["UmbracoChess-umbraco10ConnectionString"];
             if (!string.IsNullOrWhiteSpace(cs))
